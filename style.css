@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+    width: 1280px;
+    margin:0 auto;
+}
+/* Banner section styles  */
+.banner{
+    background-image: url(./images/banner/banner3.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 216px 0 166px 0;
+
+}
+.empty-part {
+    width: 50%;
+}
+.banner-info{
+    width: 50%;
+    text-align: right;
+}
+.banner-content{
+    display: flex;
+}
+h1.banner-title {
+    font-size: 65px;
+    color: #fff;
+    text-align: right;
+}
+p.banner-description {
+    font-size: 16px;
+    color: #fff;
+    text-align: right;
+    line-height: 30px;
+    margin:24px 0px 32px 0px;
+}
+.banner-btn {
+    background: #fff;
+    padding: 16px 25px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.banner-btn  a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #005FAC;
+}
+
+
+/* About section styles  */
+.about{
+padding:100px 0 ;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+}
+.about-info{
+    padding:0px 80px;
+}
+h3.about-title {
+    font-size: 40px;
+}
+p.about-description {
+    font-size: 16px;
+    color: #444343;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.about-extra-info li{
+list-style: none;
+color: #444343;
+margin-bottom: 8px;
+}
+.about-extra-info li i{
+    color:#16D887;
+    margin-right: 7px;
+}
+
+/* Plan section styles  */
+.plan-section{
+    text-align: center;
+    padding-bottom: 50px;
+}
+h1.section-title {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.plans{
+    display: flex;
+    justify-content: space-around;
+}
+h2.plan-title {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+p.plan-description {
+    font-size: 25px;
+    color: #474747;
+}
+
+/* Call to action section styles  */
+.call-to-action{
+    padding: 60px 0;
+}
+.cta-details{
+    background-image: url(./images/watch.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.overlay{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(11, 67, 141));
+    padding: 50px;
+    border-radius: 10px;
+}
+h1.cta-title {
+    font-size: 40px;
+    width: 50%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+/* Footer section styles  */
+footer{
+    padding: 90px 0;
+    background-color: #000;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+.footer-left{
+    width: 70%;
+}
+.footer-right{
+    width: 30%;
+}
+h3.footer-tile {
+    font-size: 45px;
+    color: #fff;
+}
+p.footer-description {
+    color: #fff;
+    width: 50%;
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+p.email, p.phone {
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.email a{
+    color: #fff;
+    text-decoration: none;
+}
+.phone a{
+    color: #fff;
+    text-decoration: none;
+}
+.social {
+    margin-top: 20px;
+}
+.social  span {
+    margin-right: 11px;
+}
+
+h4.subscribe-title {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+input[type="email"] {
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    background: #005fac;
+    color: #fff;
+    padding: 18px 28px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+/* responsive style for mobile  */
+@media screen and (max-width:576px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner {
+        width: 100%;
+        padding:0;
+    }
+    .banner-overlay{
+        padding: 90px  20px;
+        background-color: rgba(81, 22, 22, 0.5);
+    }
+    .empty-part {
+        display: none;
+    }
+    .banner-info {
+        width: 100%;
+        text-align: center !important;
+    }
+    h1.banner-title {
+        font-size: 30px;
+
+        text-align: center;
+    }
+    p.banner-description {
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+    }
+    .banner-btn a {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+
+
+    /* about section style for mobile 
+     */
+     .about-content {
+        flex-direction: column;
+     }
+     .about {
+        padding: 30px 0;
+    }
+    .person-image img{
+        width: 100%;
+    }
+    h3.about-title {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+/* plan section style for mobile  */
+.plan-section{
+    padding-top: 20px;
+}
+.plans {
+    flex-direction: column;
+    row-gap: 30px;
+}
+.plan img {
+    width: 60px;
+}
+h2.plan-title {
+    font-size: 24px;
+}
+
+
+p.plan-description {
+    font-size: 20px;
+}
+
+/* Cta  section stylr for mobile  */
+.call-to-action {
+    padding: 40px 20px;
+}
+h1.cta-title {
+    font-size: 21px;
+    width: 100%;
+}
+.banner-btn {
+    padding: 10px 25px;
+}
+
+/* footer section style for mobile 
+ */
+ footer {
+    padding: 40px 20px;
+ }
+ .footer-content {
+    flex-direction: column;
+ }
+ .footer-left {
+    width: 100%;
+}
+h3.footer-tile {
+    font-size: 36px;
+}
+
+p.footer-description {
+    width: 100%;
+}
+.social img {
+    width: 30px;
+}
+.footer-right {
+    width: 100%;
+    margin-top: 20px;
+}
+input[type="email"] {
+    width: 88%;
+}
+
+}
+
+
+
+
+
+
+/* responsive for tablet  */
+@media screen and (min-width:577px) and (max-width:992px){
+
+/* banner section style for tablet  */
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner {
+
+        padding:0;
+    }
+    .banner-overlay{
+        padding: 90px  20px;
+        background-color: rgba(81, 22, 22, 0.5);
+    }
+    .empty-part{
+        display: none;
+    } 
+    .banner-info{
+        width: 100%;
+        text-align: center;
+    }
+    h1.banner-title {
+        font-size: 46px;
+        text-align: center;
+    }
+    p.banner-description {
+        font-size: 18px;
+        text-align: center;
+    }
+
+/* about section stylr for tablet  */
+.about{
+    padding: 30px;
+}
+.person-image img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.about-content {
+    flex-direction: column;
+}
+
+/* plan section style for tablet  */
+
+.plan-section {
+    text-align: center;
+    padding-top: 50px;
+}
+.plan img{
+    width: 60px;
+}
+h2.plan-title {
+    font-size: 23px;
+}
+p.plan-description {
+    font-size: 19px;
+}
+
+/* CTA sectioin style for tablet  */
+.call-to-action {
+    padding: 30px;
+}
+
+
+/* footer section style for tablet  */
+footer {
+    padding: 30px;
+}
+.footer-left {
+    width: 50%;
+}
+.footer-right {
+    width: 50%;
+}
+h3.footer-tile {
+    font-size: 35px;
+}
+p.footer-description {
+    width: 90%;
+}
+h4.subscribe-title {
+    font-size: 25px;
+}
+input[type="email"] {
+    width: 87%;
+}
+
+
+
+}
+.hide{
+    display: none;
+}
